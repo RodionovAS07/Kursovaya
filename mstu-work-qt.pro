@@ -17,6 +17,7 @@ SOURCES += main.cpp\
     documentation.cpp \
         mainwindow.cpp \
     authwindow.cpp \
+    studentform.cpp \
     user.cpp \
     admin.cpp \
     student.cpp \
@@ -27,6 +28,7 @@ HEADERS  += mainwindow.h \
     authors.h \
     authwindow.h \
     documentation.h \
+    studentform.h \
     user.h \
     admin.h \
     student.h \
@@ -38,6 +40,7 @@ FORMS    += mainwindow.ui \
     authors.ui \
     authwindow.ui \
     adminform.ui \
-    documentation.ui
+    documentation.ui \
+    studentform.ui
 
 DISTFILES +=
