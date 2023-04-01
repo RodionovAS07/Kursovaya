@@ -20,7 +20,8 @@ SOURCES += main.cpp\
     user.cpp \
     admin.cpp \
     student.cpp \
-    librarian.cpp
+    librarian.cpp \
+    adminform.cpp
 
 HEADERS  += mainwindow.h \
     authors.h \
@@ -29,9 +30,14 @@ HEADERS  += mainwindow.h \
     user.h \
     admin.h \
     student.h \
-    librarian.h
+    librarian.h \
+    adminform.h \
+    user_find.h
 
 FORMS    += mainwindow.ui \
     authors.ui \
     authwindow.ui \
+    adminform.ui \
     documentation.ui
+
+DISTFILES +=

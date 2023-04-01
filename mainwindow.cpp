@@ -2,6 +2,7 @@
 #include "ui_mainwindow.h"
 #include "documentation.h"
 #include "authors.h"
+#include "adminform.h"
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -21,7 +22,14 @@ void MainWindow::on_authFormButton_clicked()
     authWindow = new AuthWindow(this);
     authWindow->show();
 }
-// Открывает форму документации
+
+void MainWindow::showAdminForm()
+{
+    hide();
+    adminWindow = new AdminForm(this);
+    adminWindow->show();
+}
+
 void MainWindow::on_DocButton_clicked()
 {
     Documentation Docum;
@@ -29,7 +37,7 @@ void MainWindow::on_DocButton_clicked()
     Docum.exec();
 }
 
-// Открывает форму информиции об авторах программы
+
 void MainWindow::on_InfAuthorButton_clicked()
 {
     Authors Author;

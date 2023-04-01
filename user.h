@@ -7,7 +7,7 @@
 class User {
 public:
     // Конструктор, принимающий логин и пароль
-    User(const QString& login, const QString& password);
+    User(const QString& login, const QString& password, const QString& user_type);
 
     // Виртуальный деструктор
     virtual ~User();
@@ -32,5 +32,6 @@ protected:
     // Функция обновления данных в файле
     void update_file();
 };
+
 
 #endif // USER_H
